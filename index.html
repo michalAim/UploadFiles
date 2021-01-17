@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet ">
+  <title>Fylo data storage component</title>
+</head>
+
+<body>
+  <div class="cards__container">
+    <div class="card cards__left">
+      <div class="cards__left--logo">
+        <img src="assets/logo.svg" alt="logo">
+      </div>
+      <div class="icons">
+        <div class="icon">
+          <img src="assets/icon-document.svg" alt="icon-document">
+        </div>
+        <div class="icon">
+          <img src="assets/icon-folder.svg" alt="icon-folder">
+        </div>
+        <div class="icon">
+          <input id="image-file" type="file" onchange="SavePhoto()" accept="image/*" >
+          <label for="image-file">
+            <img src="assets/icon-upload.svg" id="icon-upload" alt="icon-upload">
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="card cards__right">
+      <div class="cards__right__header">
+        <p> You’ve used <strong>0 MB</strong> of your storage</p>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-bar__wrapper">
+          <div class="progress-bar__used"></div>
+        </div>
+        <div class="progress-bar__detials">
+          <span>0MB</span>
+          <span>50MB</span>
+        </div>
+
+        <div class="tooltip">
+          <p class="cards__right--text">
+            <b>NULL<b>
+            <!-- <span class="tooltip__note">MB LEFT</span> -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="results">
+      <table id="myTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Size</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    background: url(./assets/bg-desktop.png) $background-color;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100% 50%;
+    color: white;
+    font-family: 'Hind', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background{
+    position: relative;
+}
+.background__photo{
+    position: absolute;
+}
+
+#image-file {
+    display: none;
+}
+
+.results {
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    border: 1px solid white;
+  }
+
+  .results th {
+    border-bottom: 1px solid white;
+    padding: 3%;
+  }
+  .results td {
+    padding: 3%;
+  }
+
+@media only screen and (max-width: 600px) {
+    body{
+      background-image: url('./assets/bg-mobile.png');
+      background-size: cover;
+    }
+}

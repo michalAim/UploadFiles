@@ -1,0 +1,26 @@
+// .icon-document{
+//     margin-top: 2px;
+// }
+// .icon-folder{
+//     margin-top: 4px;
+// }
+// .icon-upload{
+//     margin-top: 5px;
+// }
+
+
+.icons {
+    display: flex;
+    width: 150px;
+    justify-content:space-between;
+
+    &>.icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $background-color;
+        width: 40px;
+        height: 40px;
+        border-radius:10px;
+    }
+}

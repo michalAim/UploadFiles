@@ -1,0 +1,38 @@
+.progress-bar {
+  &__wrapper {
+    width: 100%;
+    height: 18px;
+    background-color: $background-color;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 7px;
+  }
+
+  &__used {   
+    width: -10%;
+    height: 100%;
+    background: linear-gradient(to right,  $color-slide-1, $color-slide-2);
+    border-radius: inherit;
+    position: relative;
+    transition: width 1s .3s ease-in-out;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 3px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
+      background-color: white;
+    }
+  }
+
+
+  &__detials {
+    display: flex;
+    justify-content: space-between; 
+  }
+}

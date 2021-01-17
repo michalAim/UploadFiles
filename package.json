@@ -1,0 +1,16 @@
+{
+  "name": "fylo",
+  "version": "1.0.0",
+  "description": "fylo",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss ./style.css"
+  },
+  "author": "michal",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefix": "^1.0.1",
+    "concat": "^1.0.3",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.3.1"
+  }
+}
